@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>introduce hello</title>
+    <title>introduce activity</title>
     <link rel="stylesheet" href="../css/initial.min.css" />
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/introduce_hello.css" />
+    <link rel="stylesheet" href="../css/introduce_Profil.css" />
     <script src="../js/jquery.3.5.1.js"></script>
     <script src="../js/common.js"></script>
 </head>
@@ -65,7 +65,7 @@
                                                     <a href="./introduce_Profil.html">프로필</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">총장활동</a>
+                                                    <a href="./introduce_Activity.html">총장활동</a>
                                                 </li>
                                                 <li>
                                                     <a href="#">역대총장</a>
@@ -781,11 +781,11 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="./introduce_hello.html" class="path-select">인사말</a>
+                            <a href="./introduce_Activity.html" class="path-select">총장활동</a>
                             <ul class="path-down">
-                                <li class="active"><a href="./introduce_hello.html">인사말</a></li>
-                                <li><a href="./introduce_Profil.html">프로필</a></li>
-                                <li><a href="#">총장활동</a></li>
+                                <li><a href="./introduce_hello.html">인사말</a></li>
+                                <li class="active"><a href="./introduce_Profil.html">프로필</a></li>
+                                <li><a href="./introduce_Activity.html">총장활동</a></li>
                                 <li><a href="#">역대총장</a></li>
                             </ul>
                         </li>
@@ -812,55 +812,428 @@
     </div>
     <div class="title-wrap">
         <div class="page-title">
-            <h3>인사말</h3>
+            <h3>총장활동</h3>
         </div>
     </div>
     <div class="sub-container">
+        <div class="tab"></div>
         <div class="content">
-            <div class="content-box">
-                <div class="img-box">
-                    <div class="left-box">
-                        <img src="../img/introduce_hello/img-greetings17.png" alt="이화여자대학교 총장 김은미">
+            <div class="board-list">
+                <div class="news">
+                    <div class="search01">
+                        <form action="" method="get" id="searchForm">
+                            <fieldset class="search-wrap">
+                                <legend type="hide">게시글 검색</legend>
+                                <input type="hidden" name="mode" value="list">
+                                <div class="rss-box"></div>
+                                <div class="sel-box">
+                                    <label for="search_key" class="hide">검색분류선택</label>
+                                    <a href="#search" class="sel-title">전체</a>
+                                    <input type="hidden" id="search_key">
+                                    <ul style="display: none;">
+                                        <li class="selected">
+                                            <a href="#search" class="searchOption">전체</a>
+                                        </li>
+                                        <li>
+                                            <a href="#search" class="searchOption">제목</a>
+                                        </li>
+                                        <li>
+                                            <a href="#search" class="searchOption">내용</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="search-box">
+                                    <label for="search_val" class="sel-label">
+                                        <span>검색어</span>
+                                    </label>
+                                    <input type="text" id="search_val" placeholder="검색어를 입력해주세요.">
+                                    <button type="submit" class="sel-btn">검색</button>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
-                    <div class="right-box">
-                        <p>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <img src="../img/introduce_hello/img-greeting-slogan22(2).png" alt>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        </p>
+                    <div class="list-thumb">
+                        <div class="top-info-wrap"></div>
+                        <ul>
+                            <li>
+                                <div class="box01">
+                                    <div class="num-box"> 353 </div>
+                                    <div class="img-box">
+                                        <a href="#a">
+                                            <img src="../img/introduce_hello/329481-1684732865000.do" alt>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box02">
+                                    <div class="title-box">
+                                        <a href="#a">
+                                            <span>
+                                                [동정] 2024학년도 이화 입학 콘서트 학생·학부모 입학 설명회
+                                            </span>
+                                        </a>
+                                        <span class="new">N</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="#a">
+                                            김은미 총장은 5월 20일(토) 대강당에서 열린 2024학년도 이화 입학 콘서트 학생·학부모 콘서트에 참석했다.
+                                        </a>
+                                    </div>
+                                    <div class="etc-box">
+                                        <ul class="info-wrap">
+                                            <li class="num">No.352</li>
+                                            <li class="writer"></li>
+                                            <li class="date">2023.05.22</li>
+                                            <li class="hit">40</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box01">
+                                    <div class="num-box"> 350 </div>
+                                    <div class="img-box">
+                                        <a href="#a">
+                                            <img src="../img/introduce_hello/329478-1684732683000.do" alt>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box02">
+                                    <div class="title-box">
+                                        <a href="#a">
+                                            <span>
+                                                [동정] 2023학년도 한국노년학회 전기학술대회
+                                            </span>
+                                        </a>
+                                        <span class="new">N</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="#a">
+                                            김은미 총장은 5월 19일(금) 이삼봉홀에서 열린 2023학년도 한국노년학회 전기학술대회에 참석했다.
+                                        </a>
+                                    </div>
+                                    <div class="etc-box">
+                                        <ul class="info-wrap">
+                                            <li class="num">No.350</li>
+                                            <li class="writer"></li>
+                                            <li class="date">2023.05.22</li>
+                                            <li class="hit">37</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box01">
+                                    <div class="num-box"> 349 </div>
+                                    <div class="img-box">
+                                        <a href="#a">
+                                            <img src="../img/introduce_hello/329476-1684731875000.do" alt>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box02">
+                                    <div class="title-box">
+                                        <a href="#a">
+                                            <span>
+                                                [동정] 김현숙 여성가족부장관 접견
+                                            </span>
+                                        </a>
+                                        <span class="new">N</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="#a">
+                                            김은미 총장은 5월 19일(금) 접견실에서 김현숙 여성가족부장관을 접견했다.
+                                        </a>
+                                    </div>
+                                    <div class="etc-box">
+                                        <ul class="info-wrap">
+                                            <li class="num">No.349</li>
+                                            <li class="writer"></li>
+                                            <li class="date">2023.05.22</li>
+                                            <li class="hit">37</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box01">
+                                    <div class="num-box"> 353 </div>
+                                    <div class="img-box">
+                                        <a href="#a">
+                                            <img src="../img/introduce_hello/329473-1684731757000.do" alt>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box02">
+                                    <div class="title-box">
+                                        <a href="#a">
+                                            <span>
+                                                [동정] 음악대학 춘계음악회
+                                            </span>
+                                        </a>
+                                        <span class="new">N</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="#a">
+                                            김은미 총장은 5월 18일(목) 김영의홀에서 열린 음악대학 춘계음악회에 참석했다.
+                                        </a>
+                                    </div>
+                                    <div class="etc-box">
+                                        <ul class="info-wrap">
+                                            <li class="num">No.350</li>
+                                            <li class="writer"></li>
+                                            <li class="date">2023.05.22</li>
+                                            <li class="hit">37</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box01">
+                                    <div class="num-box"> 353 </div>
+                                    <div class="img-box">
+                                        <a href="#a">
+                                            <img src="../img/introduce_hello/329470-1684731606000.do" alt>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box02">
+                                    <div class="title-box">
+                                        <a href="#a">
+                                            <span>
+                                                [동정] 데이비드 콜먼 교수 한반도 미래 연구원 초청 학술 행사
+                                            </span>
+                                        </a>
+                                        <span class="new">N</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="#a">
+                                            김은미 총장은 5월 18일(목) 교육관에서 열린 데이비드 콜먼 교수 한반도 미래 연구원 초청 학술 행사에 참석했다.
+                                        </a>
+                                    </div>
+                                    <div class="etc-box">
+                                        <ul class="info-wrap">
+                                            <li class="num">No.350</li>
+                                            <li class="writer"></li>
+                                            <li class="date">2023.05.22</li>
+                                            <li class="hit">30</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box01">
+                                    <div class="num-box"> 353 </div>
+                                    <div class="img-box">
+                                        <a href="#a">
+                                            <img src="../img/introduce_hello/329467-1684730659000.do" alt>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box02">
+                                    <div class="title-box">
+                                        <a href="#a">
+                                            <span>
+                                                [동정] Swiss-Korea Open Dialogue on Quantum
+                                            </span>
+                                        </a>
+                                        <span class="new">N</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="#a">
+                                            김은미 총장은 5월 18일(목) 연구협력관에서 열린 Swiss-Korea Open Dialogue on Quantum에 참석했다.
+                                        </a>
+                                    </div>
+                                    <div class="etc-box">
+                                        <ul class="info-wrap">
+                                            <li class="num">No.350</li>
+                                            <li class="writer"></li>
+                                            <li class="date">2023.05.22</li>
+                                            <li class="hit">37</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box01">
+                                    <div class="num-box"> 353 </div>
+                                    <div class="img-box">
+                                        <a href="#a">
+                                            <img src="../img/introduce_hello/329465-1684729888000.do" alt>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box02">
+                                    <div class="title-box">
+                                        <a href="#a">
+                                            <span>
+                                                [동정] Indiana University 총장단 접견
+                                            </span>
+                                        </a>
+                                        <span class="new">N</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="#a">
+                                            김은미 총장은 5월 18일(목) 접견실에서 Indiana University 총장단을 접견했다.
+                                        </a>
+                                    </div>
+                                    <div class="etc-box">
+                                        <ul class="info-wrap">
+                                            <li class="num">No.350</li>
+                                            <li class="writer"></li>
+                                            <li class="date">2023.05.22</li>
+                                            <li class="hit">37</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box01">
+                                    <div class="num-box"> 353 </div>
+                                    <div class="img-box">
+                                        <a href="#a">
+                                            <img src="../img/introduce_hello/329461-1684728965000.do" alt>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box02">
+                                    <div class="title-box">
+                                        <a href="#a">
+                                            <span>
+                                                [동정] 이화 창립 137주년 기념 특별전 《이화, 1970, 정미조》 
+                                            </span>
+                                        </a>
+                                        <span class="new">N</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="#a">
+                                            김은미 총장은 5월 17일(수) 박물관에서 열린 이화 창립 137주년 기념 특별전 <이화, 1970, 정미조>에 참석했다. 
+                                        </a>
+                                    </div>
+                                    <div class="etc-box">
+                                        <ul class="info-wrap">
+                                            <li class="num">No.350</li>
+                                            <li class="writer"></li>
+                                            <li class="date">2023.05.22</li>
+                                            <li class="hit">37</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box01">
+                                    <div class="num-box"> 353 </div>
+                                    <div class="img-box">
+                                        <a href="#a">
+                                            <img src="../img/introduce_hello/329416-1684287312000.do" alt>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box02">
+                                    <div class="title-box">
+                                        <a href="#a">
+                                            <span>
+                                                [동정] 천원의 아침밥
+                                            </span>
+                                        </a>
+                                        <span class="new">N</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="#a">
+                                            김은미 총장은 천원의 아침밥 행사 첫날인 5월 15일(월) I-HOUSE에 위치한 학생식당을 방문해 쿠키를 나눠주며 학생들을 격려했다.
+                                        </a>
+                                    </div>
+                                    <div class="etc-box">
+                                        <ul class="info-wrap">
+                                            <li class="num">No.350</li>
+                                            <li class="writer"></li>
+                                            <li class="date">2023.05.17</li>
+                                            <li class="hit">37</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box01">
+                                    <div class="num-box"> 353 </div>
+                                    <div class="img-box">
+                                        <a href="#a">
+                                            <img src="../img/introduce_hello/329382-1684129145000.do" alt>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box02">
+                                    <div class="title-box">
+                                        <a href="#a">
+                                            <span>
+                                                [동정] 대동제 티셔츠 배부
+                                            </span>
+                                        </a>
+                                        <span class="new">N</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="#a">
+                                            김은미 총장은 5월 11일(목) 정문 부스에서 학생들에게 대동제 티셔츠를 배부했다. 
+                                        </a>
+                                    </div>
+                                    <div class="etc-box">
+                                        <ul class="info-wrap">
+                                            <li class="num">No.350</li>
+                                            <li class="writer"></li>
+                                            <li class="date">2023.05.15</li>
+                                            <li class="hit">37</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="txt-box">
-                    <p>136년 전 이화는 단 한 명의 학생을 위해 이 땅에서 최초로 여성 교육의 문을 열었습니다.<br>
-                        기독교 정신의 사랑과 헌신을 바탕으로 우리 사회의 금기를 깨뜨리며 끊임없이 도전해
-                        온 이화의 하루 하루는 기적의 역사가 되었습니다.
-                    </p>
-                    <p>지금 우리는 이제까지 만나지 못했던 새로운 세상을 마주하고 있습니다. 기후환경 위기, 팬데믹, 디지털전환, 그리고 4차 산업혁명의 가속화 등 문명사적인 변혁이 우리 앞에
-                        놓여있습니다. 위기 속에서 오히려 빛났던 이화의 저력을 새로운 시대, 새로운 도약을 위해 다시 한 번 발휘할 때입니다.<br>
-                        국제 경쟁력을 갖춘 선도 연구분야와 미래형 도전 연구분야를 적극 육성하고 지원하면서 세계적 수준의 연구 중심대학으로서의 경쟁력을 높이겠습니다. 교육의 전 영역에서는 획기적인
-                        개선을 이루어갈 미래형 교육 플랫폼 구축을 통해 국제적 수월성을 확보하며 긴밀한 교류를 통해 이웃과 나라를 항상 기억하며 공동선을 창출하는데 이바지할 것입니다.
-                    </p>
-                    <p>
-                        새로운 시대가 주는 도전과 위기에서 기회를 창출하고 새로운 명문 이화로의 길을 여러분 모두와 함께 굳건히 개척해 나가겠습니다.
-                    </p>
-                </div>
-                <div class="sign-box">
-                    <p class="sign-p">
-                        <span>이화여자대학교 총장</span>
-                        <img src="../img/introduce_hello/img-sign17.png" alt="김은미">
-                    </p>
+                    <div class="paging">
+                        <div class="paging-wrap">
+                            <ul>
+                                <li>
+                                    <a href="#a" class="active">1</a>
+                                </li>
+                                <li>
+                                    <a href="#a">2</a>
+                                </li>
+                                <li>
+                                    <a href="#a">3</a>
+                                </li>
+                                <li>
+                                    <a href="#a">4</a>
+                                </li>
+                                <li>
+                                    <a href="#a">5</a>
+                                </li>
+                                <li>
+                                    <a href="#a">6</a>
+                                </li>
+                                <li>
+                                    <a href="#a">7</a>
+                                </li>
+                                <li>
+                                    <a href="#a">8</a>
+                                </li>
+                                <li>
+                                    <a href="#a">9</a>
+                                </li>
+                                <li>
+                                    <a href="#a">10</a>
+                                </li>
+                                <li class="next">
+                                    <a href="#a">
+                                        <span class="hide">다음 페이지로 이동</span>
+                                    </a>
+                                </li>
+                                <li class="last">
+                                    <a href="#a">
+                                        <span class="hide">마지막 페이지로 이동</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-wrap"></div>
                 </div>
             </div>
         </div>

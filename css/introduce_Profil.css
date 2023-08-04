@@ -33,6 +33,12 @@ a {
     word-break: break-all;
 }
 
+caption {
+    text-indent: -20000px;
+    height: 0px;
+    width: 0px;
+}
+
 .hide {
     display: block;
     position: absolute;
@@ -302,66 +308,186 @@ a {
     max-width: 1300px;
 }
 
-.sub-container .content {
-    padding: 0 0 110px 0;
-}
-
-.sub-container .content .content-box .img-box:after {
+.sub-container:after {
     content: '';
     display: block;
     clear: both;
 }
 
-.sub-container .content .content-box .img-box {
+.sub-container .content-box .greetings-box {
     padding: 0 0 45px 0;
 }
 
-.content-box .img-box .left-box {
-    width: 50%;
+.sub-container .content-box .greetings-box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sub-container .content-box .left-box {
+    width: 45.8%;
     float: left;
 }
 
-.content-box .img-box .right-box {
-    width: 50%;
-    float: right;
+.sub-container .content-box .left-box img {
+    max-width: 100%;
+    border: 0;
+    vertical-align: middle;
+}
+
+.sub-container .content-box .right-box {
+    width: 54.2%;
+    float: left;
     padding: 0 0 0 38px;
     box-sizing: border-box;
 }
 
-.content-box .txt-box {
+.content-box .right-box .txt1 {
+    position: relative;
+    padding: 110px 0 3px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.content-box .right-box .txt1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    width: 45px;
+    height: 2px;
+    background: #e82f68;
+}
+
+.content-box .right-box .txt2 {
+    padding: 0 0 15px;
+    font-weight: 500;
+    font-size: 25px;
+    color: #015c38;
+    line-height: 28px;
+}
+
+.content-box .right-box .txt3 {
+    padding: 0 0 27px;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.content-box .right-box .txt4 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+/* tab */
+.tab-box {
+    position: relative;
+    padding: 0 0 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.tab-box .tab-ul {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    table-layout: fixed;
+}
+
+.tab-box .tab-ul li {
+    display: table-cell;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    width: calc(100% / 3);
+}
+
+.tab-box .tab-ul li.active {
+    background-color: #015c38;
+}
+
+.tab-box .tab-ul li a {
+    display: block;
+    padding: 16px 15px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #5c5c5c;
+    font-weight: 400;
+}
+
+.tab-box .tab-ul li.active a {
+    color: #fff;
+}
+
+/*content*/
+.content {
+    padding: 0 0 110px 0;
+}
+
+.con-box {
     padding: 0 0 50px;
 }
 
-.content-box .txt-box p {
-    padding: 0 0 32px 0;
-    line-height: 25px;
+.h4-tit1 {
+    position: relative;
+    padding: 0 0 18px 34px;
+    font-size: 22px;
+    line-height: 27px;
     color: #222;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-.content-box .txt-box p:nth-of-type(3) {
-    padding: 0 !important;
-}
-
-.content-box .sign-box {
-    padding: 0 !important;
-}
-
-.content-box .sign-box:after {
+.h4-tit1::before {
     content: '';
     display: block;
-    clear: both;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 19px;
+    height: 2px;
+    background: #e02962;
 }
 
-.content-box .sign-box p {
-    text-align: right;
+.inner-box {
+    padding: 0 0 0 34px;
 }
 
-.content-box .sign-box p span {
-    display: block;
-    padding: 0 0 10px 0;
-    font-size: 14px;
-    line-height: 19px;
-    color: #000;
+.ewha-table {
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #333;
+}
+
+.ewha-table tbody th {
+    font-weight: 700;
+    color: #333;
+    border-bottom: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    background-color: #f2f8f6;
+    padding: 7px 10px;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 24px;
+    text-indent: 0;
+}
+
+.ewha-table tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    background-color: #fff;
     font-weight: 400;
+    color: #333;
+    line-height: 24px;
+    word-wrap: break-word;
+    text-align: center;
+    text-indent: 0;
+}
+
+.ewha-table tbody td.td-left {
+    border-right: none !important;
+    text-align: left !important;
 }
